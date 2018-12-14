@@ -5,6 +5,11 @@ pipeline {
       steps {
         echo 'hello'
       }
-    }
+   post {
+     failure {
+         echo "FAIL"
+       }
+     }
+   }
   }
 }
