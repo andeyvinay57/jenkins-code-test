@@ -1,3 +1,7 @@
-node {
-   echo 'Hello World'
+pipeline {
+  stage('sample') {
+    steps {
+       echo 'hello'
+    }
+  }
 }
