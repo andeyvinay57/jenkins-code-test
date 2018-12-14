@@ -1,7 +1,9 @@
 pipeline {
-  stage('sample') {
-    steps {
-       echo 'hello'
+  stages {
+    stage('sample') {
+      steps {
+        echo 'hello'
+      }
     }
   }
 }
