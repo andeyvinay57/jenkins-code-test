@@ -6,14 +6,13 @@ pipeline {
         echo 'hello'
       }
       catchError {
-           sh './gradlew compileJava --stacktrace'
+         sh './gradlew compileJava --stacktrace'
           }
-   
-      post {
-     failure {
-         echo "FAIL"
+       post {
+       failure {
+           echo "FAIL"
+          }
        }
-     }
-   }
+    }
   }
 }
