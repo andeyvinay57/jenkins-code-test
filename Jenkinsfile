@@ -5,14 +5,7 @@ pipeline {
       steps {
         echo 'hello'
       }
-      catchError {
-         sh './gradlew compileJava --stacktrace'
-          }
-       post {
-       failure {
-           echo "FAIL"
-          }
-       }
     }
   }
 }
+ 
